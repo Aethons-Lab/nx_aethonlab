@@ -1,19 +1,19 @@
-/* Openforge — app entry, tweaks wiring, scroll reveal */
+/* Aethon Lab — app entry, tweaks wiring, scroll reveal */
 
 const { useEffect, useState } = React;
 
-const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "accent": "green",
-  "showTicker": true,
-  "headlineVariant": 0,
-  "density": "spacious"
-}/*EDITMODE-END*/;
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/ {
+  accent: "green",
+  showTicker: true,
+  headlineVariant: 0,
+  density: "spacious",
+}; /*EDITMODE-END*/
 
 const ACCENTS = {
-  green:  "oklch(0.88 0.22 142)",
+  green: "oklch(0.88 0.22 142)",
   orange: "oklch(0.72 0.20 45)",
-  blue:   "oklch(0.72 0.18 245)",
-  white:  "#F5F5F2",
+  blue: "oklch(0.72 0.18 245)",
+  white: "#F5F5F2",
 };
 
 const HEADLINES = [
@@ -24,14 +24,17 @@ const HEADLINES = [
 
 function useScrollReveal() {
   useEffect(() => {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) {
-          e.target.classList.add("in");
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -60px 0px" });
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("in");
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -60px 0px" },
+    );
 
     const run = () => {
       document.querySelectorAll(".reveal, .step").forEach((el) => {
@@ -42,7 +45,10 @@ function useScrollReveal() {
     // re-run after any DOM changes (tweaks)
     const mo = new MutationObserver(run);
     mo.observe(document.body, { childList: true, subtree: true });
-    return () => { io.disconnect(); mo.disconnect(); };
+    return () => {
+      io.disconnect();
+      mo.disconnect();
+    };
   }, []);
 }
 
@@ -83,10 +89,10 @@ function App() {
             value={tweaks.accent}
             onChange={(v) => setTweaks({ accent: v })}
             options={[
-              { value: "green",  label: "Neon Green" },
+              { value: "green", label: "Neon Green" },
               { value: "orange", label: "Hot Orange" },
-              { value: "blue",   label: "Electric Blue" },
-              { value: "white",  label: "Mono" },
+              { value: "blue", label: "Electric Blue" },
+              { value: "white", label: "Mono" },
             ]}
           />
         </TweakSection>
@@ -109,7 +115,7 @@ function App() {
             onChange={(v) => setTweaks({ density: v })}
             options={[
               { value: "spacious", label: "Spacious" },
-              { value: "compact",  label: "Compact" },
+              { value: "compact", label: "Compact" },
             ]}
           />
         </TweakSection>

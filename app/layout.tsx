@@ -18,9 +18,9 @@ const monoFont = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Openforge | Strategy-first digital studio",
+  title: "Aethon Lab | Strategy-first digital studio",
   description:
-    "A Next.js, React, Tailwind, and shadcn-style landing page built from the Openforge prototype.",
+    "A Next.js, React, Tailwind, and shadcn-style landing page built from the Aethon Lab prototype.",
 };
 
 export default function RootLayout({

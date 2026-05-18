@@ -174,7 +174,9 @@ const ABOUT_LINES = [
 
 function useRevealOnScroll() {
   React.useEffect(() => {
-    const elements = Array.from(document.querySelectorAll<HTMLElement>(".reveal"));
+    const elements = Array.from(
+      document.querySelectorAll<HTMLElement>(".reveal"),
+    );
 
     if (elements.length === 0) {
       return;
@@ -227,12 +229,13 @@ export default function LandingPage() {
 
   return (
     <div className="page-shell min-h-screen overflow-hidden">
-      <header
-        className={cnHeader(scrolled)}
-      >
-        <a href="#top" className="flex items-center gap-3 text-display text-lg font-medium tracking-tight">
+      <header className={cnHeader(scrolled)}>
+        <a
+          href="#top"
+          className="flex items-center gap-3 text-display text-lg font-medium tracking-tight"
+        >
           <span className="h-2.5 w-2.5 rounded-sm bg-primary shadow-[0_0_16px_rgba(215,255,107,.55)]" />
-          Openforge
+          Aethon Lab
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
@@ -244,10 +247,18 @@ export default function LandingPage() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <Badge variant="outline" className="border-white/12 bg-white/5 text-[10px] text-white/70">
+          <Badge
+            variant="outline"
+            className="border-white/12 bg-white/5 text-[10px] text-white/70"
+          >
             Booking Q3 2026
           </Badge>
-          <Button asChild size="sm" variant="outline" className="rounded-full border-white/12 bg-white/5">
+          <Button
+            asChild
+            size="sm"
+            variant="outline"
+            className="rounded-full border-white/12 bg-white/5"
+          >
             <a href="#contact">
               Start a project
               <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
@@ -255,7 +266,11 @@ export default function LandingPage() {
           </Button>
         </div>
 
-        <Button size="sm" variant="ghost" className="md:hidden rounded-full px-3">
+        <Button
+          size="sm"
+          variant="ghost"
+          className="md:hidden rounded-full px-3"
+        >
           <Menu className="h-4 w-4" aria-hidden="true" />
           Menu
         </Button>
@@ -278,7 +293,7 @@ export default function LandingPage() {
           <div className="mx-auto grid w-full max-w-7xl gap-14 px-6 pb-24 pt-32 sm:px-8 lg:grid-cols-[1.2fr_0.8fr] lg:px-12 lg:pb-32 lg:pt-36">
             <div className="space-y-8">
               <div className="reveal flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-4 font-mono text-[11px] uppercase tracking-[0.3em] text-white/55">
-                <span>[ 01 / Openforge ]</span>
+                <span>[ 01 / Aethon Lab ]</span>
                 <span>Lisbon - Remote</span>
               </div>
 
@@ -290,12 +305,17 @@ export default function LandingPage() {
                 </h1>
 
                 <p className="reveal max-w-2xl text-lg leading-8 text-white/68 sm:text-xl">
-                  A strategy-first studio building websites, mobile apps, and AI systems for teams that want precision over noise.
+                  A strategy-first studio building websites, mobile apps, and AI
+                  systems for teams that want precision over noise.
                 </p>
               </div>
 
               <div className="reveal flex flex-wrap gap-4">
-                <Button asChild size="lg" className="rounded-full bg-primary text-black hover:bg-primary/90">
+                <Button
+                  asChild
+                  size="lg"
+                  className="rounded-full bg-primary text-black hover:bg-primary/90"
+                >
                   <a href="#contact">
                     <Sparkles className="h-4 w-4" aria-hidden="true" />
                     Start a project
@@ -303,7 +323,12 @@ export default function LandingPage() {
                   </a>
                 </Button>
 
-                <Button asChild size="lg" variant="outline" className="rounded-full border-white/12 bg-white/5 text-white hover:bg-white/10">
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="rounded-full border-white/12 bg-white/5 text-white hover:bg-white/10"
+                >
                   <a href="#work">
                     <ChevronDown className="h-4 w-4" aria-hidden="true" />
                     See the work
@@ -323,16 +348,22 @@ export default function LandingPage() {
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(215,255,107,0.14),transparent_35%),radial-gradient(circle_at_bottom_left,rgba(104,167,255,0.12),transparent_42%)]" />
               <CardHeader className="relative gap-3 border-b border-white/10 p-6 sm:p-8">
                 <div className="flex items-center justify-between gap-4">
-                  <Badge variant="secondary" className="bg-white/8 text-[10px] text-white/70">
+                  <Badge
+                    variant="secondary"
+                    className="bg-white/8 text-[10px] text-white/70"
+                  >
                     Live brief
                   </Badge>
                   <span className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
                     03 active engagements
                   </span>
                 </div>
-                <CardTitle className="text-3xl text-white">Strategy that ships without losing intent.</CardTitle>
+                <CardTitle className="text-3xl text-white">
+                  Strategy that ships without losing intent.
+                </CardTitle>
                 <CardDescription className="max-w-md text-white/62">
-                  The studio keeps design, engineering, and systems work on the same roadmap so decisions stay connected.
+                  The studio keeps design, engineering, and systems work on the
+                  same roadmap so decisions stay connected.
                 </CardDescription>
               </CardHeader>
 
@@ -353,9 +384,16 @@ export default function LandingPage() {
                     ["02", "App"],
                     ["03", "AI"],
                   ].map(([index, label]) => (
-                    <div key={index} className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
-                      <div className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">{index}</div>
-                      <div className="mt-2 text-display text-xl font-medium text-white">{label}</div>
+                    <div
+                      key={index}
+                      className="rounded-2xl border border-white/10 bg-white/[0.03] p-4"
+                    >
+                      <div className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
+                        {index}
+                      </div>
+                      <div className="mt-2 text-display text-xl font-medium text-white">
+                        {label}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -368,7 +406,12 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <SectionShell id="services" eyebrow="02 - Services" title="What we forge, end to end." summary="Three lanes. Zero fluff.">
+        <SectionShell
+          id="services"
+          eyebrow="02 - Services"
+          title="What we forge, end to end."
+          summary="Three lanes. Zero fluff."
+        >
           <div className="grid gap-1 overflow-hidden rounded-[2rem] border border-white/10 bg-white/10 lg:grid-cols-3">
             {SERVICES.map((service, index) => (
               <Card
@@ -379,7 +422,10 @@ export default function LandingPage() {
                 <CardHeader className="gap-8 p-6 sm:p-8">
                   <div className="flex items-center justify-between text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
                     <span>{service.id}</span>
-                    <Badge variant="secondary" className="bg-emerald-400/15 text-emerald-300">
+                    <Badge
+                      variant="secondary"
+                      className="bg-emerald-400/15 text-emerald-300"
+                    >
                       Available
                     </Badge>
                   </div>
@@ -388,7 +434,9 @@ export default function LandingPage() {
                     {service.icon}
                   </div>
 
-                  <CardTitle className="text-display text-4xl font-medium text-white">{service.title}</CardTitle>
+                  <CardTitle className="text-display text-4xl font-medium text-white">
+                    {service.title}
+                  </CardTitle>
                   <CardDescription className="max-w-sm text-base leading-7 text-white/60">
                     {service.description}
                   </CardDescription>
@@ -396,7 +444,11 @@ export default function LandingPage() {
 
                 <CardContent className="flex flex-wrap gap-2 p-6 pt-0 sm:p-8 sm:pt-0">
                   {service.tags.map((tag) => (
-                    <Badge key={tag} variant="outline" className="border-white/10 bg-transparent text-[10px] text-white/55">
+                    <Badge
+                      key={tag}
+                      variant="outline"
+                      className="border-white/10 bg-transparent text-[10px] text-white/55"
+                    >
                       {tag}
                     </Badge>
                   ))}
@@ -408,7 +460,9 @@ export default function LandingPage() {
 
         <section className="border-y border-white/10 py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-            <span className="reveal text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">03 - Why Openforge</span>
+            <span className="reveal text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
+              03 - Why Aethon Lab
+            </span>
             <p className="reveal mt-8 max-w-4xl text-display text-[clamp(2.6rem,6vw,5.8rem)] leading-[0.98] tracking-[-0.04em] text-white">
               Most studios ship what you asked for.
               <br />
@@ -417,7 +471,12 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <SectionShell id="work" eyebrow="04 - Selected Work" title="Nothing here is a template." summary="A small, deliberate portfolio.">
+        <SectionShell
+          id="work"
+          eyebrow="04 - Selected Work"
+          title="Nothing here is a template."
+          summary="A small, deliberate portfolio."
+        >
           <div className="grid gap-6 lg:grid-cols-6">
             {WORK.map((item, index) => {
               const wide = index === 0 || index === 3;
@@ -426,16 +485,25 @@ export default function LandingPage() {
                 <a
                   key={item.id}
                   href="#contact"
-                  className={cnCardLink(wide ? "lg:col-span-4" : "lg:col-span-2")}
+                  className={cnCardLink(
+                    wide ? "lg:col-span-4" : "lg:col-span-2",
+                  )}
                 >
                   <Card className="reveal group overflow-hidden border-white/10 bg-white/[0.03] p-0 transition-transform duration-300 hover:-translate-y-1">
-                    <div className="relative overflow-hidden border-b border-white/10" style={{ aspectRatio: item.ratio }}>
+                    <div
+                      className="relative overflow-hidden border-b border-white/10"
+                      style={{ aspectRatio: item.ratio }}
+                    >
                       <Image
                         src={item.image}
                         alt={`${item.title} portfolio preview`}
                         fill
                         priority={index === 0}
-                        sizes={wide ? "(min-width: 1024px) 66vw, 100vw" : "(min-width: 1024px) 33vw, 100vw"}
+                        sizes={
+                          wide
+                            ? "(min-width: 1024px) 66vw, 100vw"
+                            : "(min-width: 1024px) 33vw, 100vw"
+                        }
                         className="object-cover transition duration-700 group-hover:scale-[1.03] group-hover:brightness-75"
                       />
                       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.02),rgba(0,0,0,0.28))]" />
@@ -446,7 +514,9 @@ export default function LandingPage() {
                         {item.ratio}
                       </span>
                       <div className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-opacity duration-300 group-hover:bg-black/60 group-hover:opacity-100">
-                        <span className="text-mono text-[11px] uppercase tracking-[0.3em] text-white">View case</span>
+                        <span className="text-mono text-[11px] uppercase tracking-[0.3em] text-white">
+                          View case
+                        </span>
                       </div>
                     </div>
 
@@ -455,8 +525,12 @@ export default function LandingPage() {
                         <span>{item.id}</span>
                         <span>{item.year}</span>
                       </div>
-                      <div className="text-display text-2xl font-medium text-white">{item.title}</div>
-                      <div className="text-sm leading-6 text-white/60">{item.category}</div>
+                      <div className="text-display text-2xl font-medium text-white">
+                        {item.title}
+                      </div>
+                      <div className="text-sm leading-6 text-white/60">
+                        {item.category}
+                      </div>
                     </CardContent>
                   </Card>
                 </a>
@@ -465,12 +539,21 @@ export default function LandingPage() {
           </div>
         </SectionShell>
 
-        <SectionShell id="products" eyebrow="05 - Products" title="Built for us, shared with you." summary="Things we ship on our own time.">
+        <SectionShell
+          id="products"
+          eyebrow="05 - Products"
+          title="Built for us, shared with you."
+          summary="Things we ship on our own time."
+        >
           <div className="grid gap-6 lg:grid-cols-2">
             {PRODUCTS.map((product, index) => (
               <Card
                 key={product.id}
-                className={cnProductCard(product.featured ? "border-primary/25 bg-primary/5" : "bg-white/[0.03]")}
+                className={cnProductCard(
+                  product.featured
+                    ? "border-primary/25 bg-primary/5"
+                    : "bg-white/[0.03]",
+                )}
                 style={{ transitionDelay: `${index * 60}ms` }}
               >
                 <CardHeader className="gap-6 p-6 sm:p-8">
@@ -478,22 +561,32 @@ export default function LandingPage() {
                     <span>{product.id}</span>
                     <span>{product.tag}</span>
                   </div>
-                  <CardTitle className="text-display text-4xl font-medium text-white">{product.name}</CardTitle>
+                  <CardTitle className="text-display text-4xl font-medium text-white">
+                    {product.name}
+                  </CardTitle>
                   <CardDescription className="max-w-lg text-base leading-7 text-white/62">
                     {product.description}
                   </CardDescription>
                 </CardHeader>
 
                 <CardContent className="flex items-center justify-between border-t border-white/10 p-6 sm:p-8">
-                  <span className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">Learn more</span>
-                  <ArrowUpRight className="h-5 w-5 text-white/60 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
+                  <span className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
+                    Learn more
+                  </span>
+                  <ArrowUpRight
+                    className="h-5 w-5 text-white/60 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    aria-hidden="true"
+                  />
                 </CardContent>
               </Card>
             ))}
           </div>
         </SectionShell>
 
-        <section id="process" className="border-t border-white/10 py-24 sm:py-32">
+        <section
+          id="process"
+          className="border-t border-white/10 py-24 sm:py-32"
+        >
           <div className="overflow-hidden border-y border-white/10 py-4 text-display text-4xl font-medium tracking-[-0.04em] text-white/35 sm:text-6xl">
             <div className="marquee-track flex w-[200%] items-center gap-8 whitespace-nowrap">
               {Array.from({ length: 2 }).map((_, index) => (
@@ -509,17 +602,29 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <SectionShell eyebrow="06 - Process" title="Think. Forge. Launch." summary="Three steps. No theater." compact>
+          <SectionShell
+            eyebrow="06 - Process"
+            title="Think. Forge. Launch."
+            summary="Three steps. No theater."
+            compact
+          >
             <div className="grid gap-4 lg:grid-cols-3">
               {STEPS.map((step, index) => (
-                <Card key={step.id} className="reveal border-white/10 bg-white/[0.03] p-0">
+                <Card
+                  key={step.id}
+                  className="reveal border-white/10 bg-white/[0.03] p-0"
+                >
                   <CardHeader className="gap-8 p-6 sm:p-8">
                     <div className="flex items-center justify-between text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
                       <span>{step.id}</span>
                       <span>Step {index + 1}</span>
                     </div>
-                    <CardTitle className="text-display text-4xl font-medium text-white">{step.title}</CardTitle>
-                    <CardDescription className="text-base leading-7 text-white/62">{step.description}</CardDescription>
+                    <CardTitle className="text-display text-4xl font-medium text-white">
+                      {step.title}
+                    </CardTitle>
+                    <CardDescription className="text-base leading-7 text-white/62">
+                      {step.description}
+                    </CardDescription>
                   </CardHeader>
                 </Card>
               ))}
@@ -527,20 +632,37 @@ export default function LandingPage() {
           </SectionShell>
         </section>
 
-        <SectionShell id="about" eyebrow="07 - About" title="A studio of four, on purpose." summary="Four lines. That's enough.">
+        <SectionShell
+          id="about"
+          eyebrow="07 - About"
+          title="A studio of four, on purpose."
+          summary="Four lines. That's enough."
+        >
           <ol className="grid gap-4">
             {ABOUT_LINES.map((line, index) => (
-              <li key={line} className="reveal flex flex-col gap-4 rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-5 sm:flex-row sm:items-center sm:gap-8 sm:p-6">
-                <span className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">0{index + 1}</span>
-                <p className="text-display text-2xl font-medium leading-snug text-white sm:text-3xl">{line}</p>
+              <li
+                key={line}
+                className="reveal flex flex-col gap-4 rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-5 sm:flex-row sm:items-center sm:gap-8 sm:p-6"
+              >
+                <span className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
+                  0{index + 1}
+                </span>
+                <p className="text-display text-2xl font-medium leading-snug text-white sm:text-3xl">
+                  {line}
+                </p>
               </li>
             ))}
           </ol>
         </SectionShell>
 
-        <section id="contact" className="border-t border-white/10 py-24 sm:py-32">
+        <section
+          id="contact"
+          className="border-t border-white/10 py-24 sm:py-32"
+        >
           <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-            <span className="reveal text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">08 - Contact</span>
+            <span className="reveal text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
+              08 - Contact
+            </span>
             <h2 className="reveal mt-8 max-w-4xl text-display text-[clamp(3rem,8vw,7.2rem)] leading-[0.9] tracking-[-0.05em] text-white">
               Ready to build
               <br />
@@ -548,16 +670,29 @@ export default function LandingPage() {
             </h2>
 
             <div className="reveal mt-10 flex flex-wrap gap-4">
-              <Button asChild size="lg" className="rounded-full bg-primary text-black hover:bg-primary/90">
-                <a href="mailto:hello@openforge.studio">
+              <Button
+                asChild
+                size="lg"
+                className="rounded-full bg-primary text-black hover:bg-primary/90"
+              >
+                <a href="mailto:hello@Aethon Lab.studio">
                   <Mail className="h-4 w-4" aria-hidden="true" />
-                  hello@openforge.studio
+                  hello@Aethon Lab.studio
                   <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
                 </a>
               </Button>
 
-              <Button asChild size="lg" variant="outline" className="rounded-full border-white/12 bg-white/5 text-white hover:bg-white/10">
-                <a href="https://instagram.com/openforge" target="_blank" rel="noreferrer">
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="rounded-full border-white/12 bg-white/5 text-white hover:bg-white/10"
+              >
+                <a
+                  href="https://instagram.com/Aethon Lab"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <MessageCircle className="h-4 w-4" aria-hidden="true" />
                   Instagram DM
                   <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
@@ -566,7 +701,10 @@ export default function LandingPage() {
             </div>
 
             <div className="reveal mt-8 flex flex-wrap gap-4 text-mono text-[11px] uppercase tracking-[0.24em] text-white/55">
-              <span className="inline-flex items-center gap-2"><CalendarDays className="h-4 w-4" aria-hidden="true" /> Avg reply under 2 hours</span>
+              <span className="inline-flex items-center gap-2">
+                <CalendarDays className="h-4 w-4" aria-hidden="true" /> Avg
+                reply under 2 hours
+              </span>
               <span>Mon - Fri | 09:00 - 19:00 WET</span>
             </div>
           </div>
@@ -575,9 +713,9 @@ export default function LandingPage() {
 
       <footer className="border-t border-white/10 py-10 text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-6 sm:px-8 lg:px-12">
-          <span>Openforge Studio - 2026</span>
+          <span>Aethon Lab Studio - 2026</span>
           <span>Lisbon / Remote</span>
-          <span>hello@openforge.studio</span>
+          <span>hello@Aethon Lab.studio</span>
           <span>Next.js + React + Tailwind + shadcn</span>
         </div>
       </footer>
@@ -585,9 +723,15 @@ export default function LandingPage() {
   );
 }
 
-function HeaderLink({ href, children }: React.PropsWithChildren<{ href: string }>) {
+function HeaderLink({
+  href,
+  children,
+}: React.PropsWithChildren<{ href: string }>) {
   return (
-    <a href={href} className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/50 transition-colors hover:text-white">
+    <a
+      href={href}
+      className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/50 transition-colors hover:text-white"
+    >
       {children}
     </a>
   );
@@ -608,12 +752,23 @@ function SectionShell({
   compact?: boolean;
 }>) {
   return (
-    <section id={id} className={compact ? "border-t border-white/10 py-20 sm:py-24" : "border-t border-white/10 py-24 sm:py-32"}>
+    <section
+      id={id}
+      className={
+        compact
+          ? "border-t border-white/10 py-20 sm:py-24"
+          : "border-t border-white/10 py-24 sm:py-32"
+      }
+    >
       <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
         <div className="reveal mb-10 grid gap-4 lg:mb-14 lg:grid-cols-[1fr_1.6fr] lg:items-end">
           <div>
-            <span className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">{eyebrow}</span>
-            <div className="mt-3 text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">{summary}</div>
+            <span className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
+              {eyebrow}
+            </span>
+            <div className="mt-3 text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
+              {summary}
+            </div>
           </div>
           <h2 className="text-display text-[clamp(2.6rem,5vw,5rem)] leading-[0.94] tracking-[-0.05em] text-white">
             {title}
