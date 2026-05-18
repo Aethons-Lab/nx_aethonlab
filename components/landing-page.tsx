@@ -706,11 +706,14 @@ export default function LandingPage() {
               </span>
               <span>Mon - Fri | 09:00 - 19:00 WET</span>
             </div>
-            <div className="reveal mt-6 text-mono text-[15px] text-white/80">
-              <div>2/18 Mark Street, Lidcombe, NSW 2141</div>
+            <div className="reveal mt-6 text-mono text-[15px] text-white/80 tracking-tighter">
+              <div>Address: 2/18 Mark Street, Lidcombe, NSW 2141</div>
               <div>
-                <a href="tel:+61451242077" className="underline">
-                  +61 451 242 077
+                <a
+                  href="tel:+61451242077"
+                  className="underline tracking-tighter text-white/80 transition-colors hover:text-white"
+                >
+                  Tel: +61 451 242 077
                 </a>
               </div>
             </div>
