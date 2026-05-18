@@ -13,7 +13,6 @@ import {
   MessageCircle,
   Smartphone,
   Sparkles,
-  SquareStack,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -298,7 +297,7 @@ export default function LandingPage() {
               </div>
 
               <div className="space-y-6">
-                <h1 className="reveal text-display max-w-5xl text-[clamp(3.75rem,11vw,10.5rem)] font-medium leading-[0.88] tracking-[-0.05em] text-white">
+                <h1 className="reveal text-display max-w-5xl text-[clamp(3.75rem,11vw,10.5rem)] font-medium leading-[0.88] tracking-tighter text-white">
                   We do not just build.
                   <br />
                   We think first.
@@ -344,7 +343,7 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <Card className="reveal relative overflow-hidden border-white/10 bg-white/[0.04]">
+            <Card className="reveal relative overflow-hidden border-white/10 bg-white/4">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(215,255,107,0.14),transparent_35%),radial-gradient(circle_at_bottom_left,rgba(104,167,255,0.12),transparent_42%)]" />
               <CardHeader className="relative gap-3 border-b border-white/10 p-6 sm:p-8">
                 <div className="flex items-center justify-between gap-4">
@@ -386,7 +385,7 @@ export default function LandingPage() {
                   ].map(([index, label]) => (
                     <div
                       key={index}
-                      className="rounded-2xl border border-white/10 bg-white/[0.03] p-4"
+                      className="rounded-2xl border border-white/10 bg-white/3 p-4"
                     >
                       <div className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
                         {index}
@@ -412,11 +411,11 @@ export default function LandingPage() {
           title="What we forge, end to end."
           summary="Three lanes. Zero fluff."
         >
-          <div className="grid gap-1 overflow-hidden rounded-[2rem] border border-white/10 bg-white/10 lg:grid-cols-3">
+          <div className="grid gap-1 overflow-hidden rounded-4xl border border-white/10 bg-white/10 lg:grid-cols-3">
             {SERVICES.map((service, index) => (
               <Card
                 key={service.id}
-                className="reveal group relative rounded-none border-0 bg-black/20 p-0 transition-colors duration-300 hover:bg-white/[0.045]"
+                className="reveal group relative rounded-none border-0 bg-black/20 p-0 transition-colors duration-300 hover:bg-white/4.5"
                 style={{ transitionDelay: `${index * 80}ms` }}
               >
                 <CardHeader className="gap-8 p-6 sm:p-8">
@@ -489,7 +488,7 @@ export default function LandingPage() {
                     wide ? "lg:col-span-4" : "lg:col-span-2",
                   )}
                 >
-                  <Card className="reveal group overflow-hidden border-white/10 bg-white/[0.03] p-0 transition-transform duration-300 hover:-translate-y-1">
+                  <Card className="reveal group overflow-hidden border-white/10 bg-white/3 p-0 transition-transform duration-300 hover:-translate-y-1">
                     <div
                       className="relative overflow-hidden border-b border-white/10"
                       style={{ aspectRatio: item.ratio }}
@@ -552,7 +551,7 @@ export default function LandingPage() {
                 className={cnProductCard(
                   product.featured
                     ? "border-primary/25 bg-primary/5"
-                    : "bg-white/[0.03]",
+                    : "bg-white/3",
                 )}
                 style={{ transitionDelay: `${index * 60}ms` }}
               >
@@ -612,7 +611,7 @@ export default function LandingPage() {
               {STEPS.map((step, index) => (
                 <Card
                   key={step.id}
-                  className="reveal border-white/10 bg-white/[0.03] p-0"
+                  className="reveal border-white/10 bg-white/3 p-0"
                 >
                   <CardHeader className="gap-8 p-6 sm:p-8">
                     <div className="flex items-center justify-between text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
@@ -642,7 +641,7 @@ export default function LandingPage() {
             {ABOUT_LINES.map((line, index) => (
               <li
                 key={line}
-                className="reveal flex flex-col gap-4 rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-5 sm:flex-row sm:items-center sm:gap-8 sm:p-6"
+                className="reveal flex flex-col gap-4 rounded-[1.75rem] border border-white/10 bg-white/3 p-5 sm:flex-row sm:items-center sm:gap-8 sm:p-6"
               >
                 <span className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
                   0{index + 1}
@@ -663,7 +662,7 @@ export default function LandingPage() {
             <span className="reveal text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
               08 - Contact
             </span>
-            <h2 className="reveal mt-8 max-w-4xl text-display text-[clamp(3rem,8vw,7.2rem)] leading-[0.9] tracking-[-0.05em] text-white">
+            <h2 className="reveal mt-8 max-w-4xl text-display text-[clamp(3rem,8vw,7.2rem)] leading-[0.9] tracking-tighter text-white">
               Ready to build
               <br />
               something real?
@@ -706,6 +705,14 @@ export default function LandingPage() {
                 reply under 2 hours
               </span>
               <span>Mon - Fri | 09:00 - 19:00 WET</span>
+            </div>
+            <div className="reveal mt-6 text-mono text-[15px] text-white/80">
+              <div>2/18 Mark Street, Lidcombe, NSW 2141</div>
+              <div>
+                <a href="tel:+61451242077" className="underline">
+                  +61 451 242 077
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -770,7 +777,7 @@ function SectionShell({
               {summary}
             </div>
           </div>
-          <h2 className="text-display text-[clamp(2.6rem,5vw,5rem)] leading-[0.94] tracking-[-0.05em] text-white">
+          <h2 className="text-display text-[clamp(2.6rem,5vw,5rem)] leading-[0.94] tracking-tighter text-white">
             {title}
           </h2>
         </div>
