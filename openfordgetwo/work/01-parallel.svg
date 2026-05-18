@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="pBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0e14"></stop>
+      <stop offset="1" stop-color="#050810"></stop>
+    </linearGradient>
+    <pattern id="pGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(245,245,242,0.04)" stroke-width="1"></path>
+    </pattern>
+    <linearGradient id="pLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="oklch(0.72 0.18 245)" stop-opacity="0"></stop>
+      <stop offset="0.5" stop-color="oklch(0.72 0.18 245)"></stop>
+      <stop offset="1" stop-color="oklch(0.72 0.18 245)" stop-opacity="0"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#pBg)"></rect>
+  <rect width="1600" height="900" fill="url(#pGrid)"></rect>
+
+  
+  <rect x="80" y="80" width="1440" height="740" fill="#0c1118" stroke="rgba(245,245,242,0.1)"></rect>
+  <rect x="80" y="80" width="1440" height="36" fill="#070a0f"></rect>
+  <circle cx="104" cy="98" r="5" fill="#2a3340"></circle>
+  <circle cx="122" cy="98" r="5" fill="#2a3340"></circle>
+  <circle cx="140" cy="98" r="5" fill="#2a3340"></circle>
+  <rect x="180" y="88" width="260" height="20" fill="#141a24" rx="3"></rect>
+  <text x="192" y="102" font-family="monospace" font-size="11" fill="#6b7588">parallel.capital</text>
+
+  
+  <text x="140" y="260" font-family="&#39;Space Grotesk&#39;, sans-serif" font-size="96" font-weight="500" fill="#F5F5F2" letter-spacing="-3">Capital, re‑</text>
+  <text x="140" y="360" font-family="&#39;Space Grotesk&#39;, sans-serif" font-size="96" font-weight="500" fill="#F5F5F2" letter-spacing="-3">allocated in</text>
+  <text x="140" y="460" font-family="&#39;Space Grotesk&#39;, sans-serif" font-size="96" font-weight="500" fill="oklch(0.72 0.18 245)" letter-spacing="-3" font-style="italic">real time.</text>
+
+  <text x="140" y="520" font-family="monospace" font-size="12" fill="#6b7588" letter-spacing="2">AUM · €2.4B / TRACKED IN 11 CURRENCIES</text>
+
+  
+  <rect x="140" y="560" width="220" height="56" fill="oklch(0.72 0.18 245)"></rect>
+  <text x="170" y="594" font-family="&#39;Space Grotesk&#39;, sans-serif" font-size="16" fill="#050810" font-weight="500">Open an account →</text>
+
+  
+  <g transform="translate(900, 200)">
+    <rect width="520" height="520" fill="#070a0f" stroke="rgba(245,245,242,0.08)"></rect>
+    <text x="20" y="34" font-family="monospace" font-size="11" fill="#6b7588" letter-spacing="2">PORTFOLIO · LTM</text>
+    <text x="20" y="90" font-family="&#39;Space Grotesk&#39;, sans-serif" font-size="48" fill="#F5F5F2" font-weight="500">+18.42%</text>
+
+    
+    <line x1="20" y1="180" x2="500" y2="180" stroke="rgba(245,245,242,0.06)"></line>
+    <line x1="20" y1="280" x2="500" y2="280" stroke="rgba(245,245,242,0.06)"></line>
+    <line x1="20" y1="380" x2="500" y2="380" stroke="rgba(245,245,242,0.06)"></line>
+    <line x1="20" y1="480" x2="500" y2="480" stroke="rgba(245,245,242,0.06)"></line>
+
+    
+    <path d="M 20 420 L 80 380 L 140 390 L 200 340 L 260 360 L 320 280 L 380 240 L 440 200 L 500 170" fill="none" stroke="oklch(0.72 0.18 245)" stroke-width="2"></path>
+    <path d="M 20 420 L 80 380 L 140 390 L 200 340 L 260 360 L 320 280 L 380 240 L 440 200 L 500 170 L 500 500 L 20 500 Z" fill="oklch(0.72 0.18 245)" fill-opacity="0.08"></path>
+
+    <circle cx="500" cy="170" r="5" fill="oklch(0.72 0.18 245)"></circle>
+    <circle cx="500" cy="170" r="10" fill="oklch(0.72 0.18 245)" fill-opacity="0.2"></circle>
+
+    
+    <text x="20" y="500" font-family="monospace" font-size="10" fill="#6b7588">MAY</text>
+    <text x="250" y="500" font-family="monospace" font-size="10" fill="#6b7588">NOV</text>
+    <text x="470" y="500" font-family="monospace" font-size="10" fill="#6b7588">APR</text>
+  </g>
+
+  
+  <line x1="80" y1="760" x2="1520" y2="760" stroke="rgba(245,245,242,0.08)"></line>
+  <text x="140" y="790" font-family="monospace" font-size="11" fill="#6b7588" letter-spacing="2">01 — PARALLEL CAPITAL</text>
+  <text x="1380" y="790" font-family="monospace" font-size="11" fill="#6b7588" letter-spacing="2">2026</text>
+</svg>
