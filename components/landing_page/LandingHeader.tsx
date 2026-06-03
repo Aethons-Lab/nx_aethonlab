@@ -5,7 +5,7 @@ import { ArrowUpRight, Menu } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { HeaderLink } from "./HeaderLink";
-import { cnHeader } from "../cn";
+import { cnHeader } from "../../lib/cn";
 
 export function LandingHeader() {
   const [scrolled, setScrolled] = React.useState(false);
