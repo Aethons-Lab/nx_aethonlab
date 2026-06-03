@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card";
 import { SectionShell } from "./SectionShell";
 import { PRODUCTS } from "../constants";
-import { cnProductCard } from "../cn";
+import { cnProductCard } from "../../lib/cn";
 
 export function LandingProductsSection() {
   return (
