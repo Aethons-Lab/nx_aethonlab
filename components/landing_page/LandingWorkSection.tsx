@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { SectionShell } from "./SectionShell";
 import { WORK } from "../constants";
-import { cnCardLink } from "../cn";
+import { cnCardLink } from "../../lib/cn";
 
 export function LandingWorkSection() {
   return (
