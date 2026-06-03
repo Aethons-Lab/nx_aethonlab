@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import InteractiveCursor from "@/components/ui/cursor";
 
 const displayFont = Space_Grotesk({
   variable: "--font-display",
@@ -34,6 +35,7 @@ export default function RootLayout({
       className={`${displayFont.variable} ${bodyFont.variable} ${monoFont.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full bg-background text-foreground">
+        <InteractiveCursor />
         {children}
       </body>
     </html>
