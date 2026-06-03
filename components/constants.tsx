@@ -5,7 +5,7 @@ export type Service = {
   title: string;
   description: string;
   tags: string[];
-  //   icon: React.ReactNode;
+  icon: React.ReactNode;
 };
 
 export type WorkItem = {
@@ -25,7 +25,7 @@ export const SERVICES: Service[] = [
     description:
       "Marketing sites, product pages, and platforms designed to convert rather than decorate.",
     tags: ["Next.js", "Tailwind", "SEO"],
-    // icon: <Globe className="h-6 w-6" aria-hidden="true" />,
+    icon: <Globe className="h-6 w-6" aria-hidden="true" />,
   },
   {
     id: "02",
@@ -33,7 +33,7 @@ export const SERVICES: Service[] = [
     description:
       "iOS and Android experiences with a native feel, shipped with a product mindset.",
     tags: ["React Native", "Expo", "Motion"],
-    // icon: <Smartphone className="h-6 w-6" aria-hidden="true" />,
+    icon: <Smartphone className="h-6 w-6" aria-hidden="true" />,
   },
   {
     id: "03",
@@ -41,7 +41,7 @@ export const SERVICES: Service[] = [
     description:
       "Workflows, agents, and internal tools that remove repetitive work from the operating model.",
     tags: ["Claude", "n8n", "Routing"],
-    // icon: <Bot className="h-6 w-6" aria-hidden="true" />,
+    icon: <Bot className="h-6 w-6" aria-hidden="true" />,
   },
 ];
 
