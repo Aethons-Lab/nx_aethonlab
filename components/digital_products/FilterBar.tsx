@@ -22,7 +22,7 @@ function FilterChip({
       onClick={onClick}
       aria-pressed={active}
       className={cn(
-        "rounded-full border px-2.5 py-1 text-mono text-[7px] uppercase tracking-[0.15em] transition-colors",
+        "rounded-full border px-2 py-0.5 text-mono text-[6px] uppercase tracking-[0.12em] transition-colors",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         active
           ? "border-primary/40 bg-primary/15 text-primary"
@@ -71,7 +71,7 @@ export function FilterBar({
           onChange={(event) => onSearchChange(event.target.value)}
           placeholder="Search products by name or keyword"
           aria-label="Search digital products"
-          className="h-9 w-full rounded-full border border-white/12 bg-white/[0.03] pl-9 pr-9 text-[10px] text-white placeholder:text-white/35 transition-colors focus:border-white/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="h-8 w-full rounded-full border border-white/12 bg-white/[0.03] pl-8 pr-8 text-[9px] text-white placeholder:text-white/35 transition-colors focus:border-white/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         />
         {search.length > 0 && (
           <button
@@ -86,7 +86,7 @@ export function FilterBar({
       </div>
 
       <div className="space-y-3">
-        <span className="block text-mono text-[9px] uppercase tracking-[0.18em] text-white/40">
+        <span className="block text-mono text-[8px] uppercase tracking-[0.15em] text-white/40">
           Category
         </span>
         <div className="flex flex-wrap gap-1.5">
@@ -109,7 +109,7 @@ export function FilterBar({
       </div>
 
       <div className="space-y-3">
-        <span className="block text-mono text-[9px] uppercase tracking-[0.18em] text-white/40">
+        <span className="block text-mono text-[8px] uppercase tracking-[0.15em] text-white/40">
           File format
         </span>
         <div className="flex flex-wrap gap-1.5">
