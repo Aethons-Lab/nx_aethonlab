@@ -16,6 +16,8 @@ export type WorkItem = {
   label: string;
   ratio: string;
   image: string;
+  /** Live site. Cards without one fall back to the contact anchor. */
+  href?: string;
 };
 
 export const SERVICES: Service[] = [
@@ -48,39 +50,70 @@ export const SERVICES: Service[] = [
 export const WORK: WorkItem[] = [
   {
     id: "W.01",
-    title: "Parallel Capital",
-    category: "Fintech - Website + Dashboard",
-    year: "2026",
-    label: "HERO - ABOVE THE FOLD",
+    title: "ModOutfit",
+    category: "E-Commerce - Custom Apparel Platform",
+    year: "2025",
+    label: "STOREFRONT - DESIGN CUSTOMIZER",
     ratio: "16 / 9",
-    image: "/work/01-parallel.svg",
+    image: "/work/01-modoutfit.svg",
+    href: "https://modoutfit.com/",
   },
   {
     id: "W.02",
-    title: "Nocturne FC",
-    category: "Sports Club - Mobile App",
+    title: "Shikhi AI",
+    category: "EdTech - AI Tutor Mobile App",
     year: "2025",
-    label: "IOS - MATCHDAY SCREEN",
+    label: "MOBILE - READING PRACTICE",
     ratio: "3 / 4",
-    image: "/work/02-nocturne.svg",
+    image: "/work/02-shikhi-ai.svg",
   },
   {
     id: "W.03",
-    title: "Halcyon Health",
-    category: "Healthtech - AI Triage Agent",
+    title: "Script Geenie",
+    category: "AI Tooling - Script Generation",
     year: "2025",
-    label: "DASHBOARD - AGENT ROUTING",
-    ratio: "16 / 10",
-    image: "/work/03-halcyon.svg",
+    label: "WEB APP - GENERATION PIPELINE",
+    ratio: "4 / 5",
+    image: "/work/03-scriptgeenie.svg",
+    href: "https://scriptgeenie.netlify.app/",
   },
   {
     id: "W.04",
-    title: "Studio Otira",
-    category: "D2C - Storefront",
-    year: "2024",
-    label: "PDP - ABOVE THE FOLD",
-    ratio: "4 / 5",
-    image: "/work/04-otira.svg",
+    title: "MySolusy",
+    category: "SaaS - Business Management Suite",
+    year: "2025",
+    label: "DASHBOARD - WORKSPACE OVERVIEW",
+    ratio: "16 / 10",
+    image: "/work/04-mysolusy.svg",
+    href: "https://www.mysolusy.com/",
+  },
+  {
+    id: "W.05",
+    title: "Voice for Voiceless 24",
+    category: "Media - Publishing Platform",
+    year: "2025",
+    label: "EDITORIAL - ABOVE THE FOLD",
+    ratio: "16 / 9",
+    image: "/work/05-voiceforvoiceless.svg",
+    href: "https://voiceforvoiceless24.com/",
+  },
+  {
+    id: "W.06",
+    title: "English Vocabulary",
+    category: "EdTech - Arabic-Speaking Learners",
+    year: "2025",
+    label: "MOBILE - VOCABULARY CARD",
+    ratio: "3 / 4",
+    image: "/work/06-english-vocab.svg",
+  },
+  {
+    id: "W.07",
+    title: "Toponimia Andalûh",
+    category: "Culture - Community Mobile App",
+    year: "2025",
+    label: "MOBILE - COMMUNITY ARCHIVE",
+    ratio: "3 / 4",
+    image: "/work/07-toponimia.svg",
   },
 ];
 

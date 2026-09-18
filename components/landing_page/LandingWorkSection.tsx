@@ -18,11 +18,14 @@ export function LandingWorkSection() {
       <div className="grid gap-6 lg:grid-cols-6">
         {WORK.map((item, index) => {
           const wide = index === 0 || index === 3;
+          const external = Boolean(item.href);
 
           return (
             <a
               key={item.id}
-              href="#contact"
+              href={item.href ?? "#contact"}
+              target={external ? "_blank" : undefined}
+              rel={external ? "noopener noreferrer" : undefined}
               className={cnCardLink(wide ? "lg:col-span-4" : "lg:col-span-2")}
             >
               <Card className="reveal group overflow-hidden border-white/10 bg-white/3 p-0 transition-transform duration-300 hover:-translate-y-1">
@@ -51,7 +54,7 @@ export function LandingWorkSection() {
                   </span>
                   <div className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-opacity duration-300 group-hover:bg-black/60 group-hover:opacity-100">
                     <span className="text-mono text-[11px] uppercase tracking-[0.3em] text-white">
-                      View case
+                      {external ? "Visit site" : "View case"}
                     </span>
                   </div>
                 </div>
