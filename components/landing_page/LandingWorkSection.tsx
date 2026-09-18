@@ -34,7 +34,7 @@ export function LandingWorkSection() {
                     src={item.image}
                     alt={`${item.title} portfolio preview`}
                     fill
-                    priority={index === 0}
+                    preload={index === 0}
                     sizes={
                       wide
                         ? "(min-width: 1024px) 66vw, 100vw"
