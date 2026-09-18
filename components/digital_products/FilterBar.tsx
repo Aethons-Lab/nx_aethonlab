@@ -22,7 +22,7 @@ function FilterChip({
       onClick={onClick}
       aria-pressed={active}
       className={cn(
-        "rounded-full border px-3.5 py-1.5 text-mono text-[9px] uppercase tracking-[0.18em] transition-colors",
+        "rounded-full border px-3.5 py-1.5 text-mono text-[8px] uppercase tracking-[0.18em] transition-colors",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
         active
           ? "border-primary/40 bg-primary/15 text-primary"
@@ -71,7 +71,7 @@ export function FilterBar({
           onChange={(event) => onSearchChange(event.target.value)}
           placeholder="Search products by name or keyword"
           aria-label="Search digital products"
-          className="h-12 w-full rounded-full border border-white/12 bg-white/[0.03] pl-11 pr-11 text-xs text-white placeholder:text-white/35 transition-colors focus:border-white/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="h-12 w-full rounded-full border border-white/12 bg-white/[0.03] pl-11 pr-11 text-[11px] text-white placeholder:text-white/35 transition-colors focus:border-white/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         />
         {search.length > 0 && (
           <button
