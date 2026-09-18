@@ -79,8 +79,10 @@ textarea,
 select {
   font: inherit;
 }
-body {
-  cursor: none;
+@media (min-width: 768px) and (pointer: fine) {
+  body {
+    cursor: none;
+  }
 }
 
 ::selection {
@@ -116,9 +118,7 @@ body {
 
 .glass-panel {
   background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(5 px) saturate(140%);
-  /* backdrop-filter: blur(22px) saturate(140%);
-  -webkit-backdrop-filter: blur(22px) saturate(140%); */
+  backdrop-filter: blur(5px) saturate(140%);
 }
 
 .marquee-track {
@@ -170,7 +170,8 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #00bbcc;
 }
-firefox scrollbar styles * {
+/* firefox scrollbar styles */
+* {
   scrollbar-width: thin; /* auto | thin | none */
   scrollbar-color: rgb(255, 60, 0) #0a0f1a; /* thumb track */
 }

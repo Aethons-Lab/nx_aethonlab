@@ -1,7 +1,6 @@
-// This is a simplified `cn` function. In a real project, you might use libraries like `clsx` and `tailwind-merge`.
-export function cn(...classes: (string | undefined | null | false)[]) {
-  return classes.filter(Boolean).join(" ");
-}
+import { cn } from "./utils";
+
+export { cn };
 
 export function cnHeader(scrolled: boolean) {
   return cn(
@@ -16,5 +15,5 @@ export function cnCardLink(extra: string) {
 }
 
 export function cnProductCard(extra: string) {
-  return cn("reveal group overflow-hidden bg-white/[0.03]", extra);
+  return cn("reveal group overflow-hidden", extra);
 }
