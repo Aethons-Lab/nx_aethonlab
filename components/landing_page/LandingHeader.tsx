@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { HeaderLink } from "./HeaderLink";
 import { cnHeader } from "../../lib/cn";
@@ -47,12 +46,6 @@ export function LandingHeader() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <Badge
-            variant="outline"
-            className="border-white/12 bg-white/5 text-[10px] text-white/70"
-          >
-            Booking Q3 2026
-          </Badge>
           <Button
             asChild
             size="sm"
