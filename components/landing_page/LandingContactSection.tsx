@@ -23,9 +23,9 @@ export function LandingContactSection() {
             size="lg"
             className="rounded-full bg-primary text-black hover:bg-primary/90"
           >
-            <a href="mailto:hello@Aethon Lab.studio">
+            <a href="mailto:hello@aethonlab.studio">
               <Mail className="h-4 w-4" aria-hidden="true" />
-              hello@Aethon Lab.studio
+              hello@aethonlab.studio
               <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
             </a>
           </Button>
@@ -37,9 +37,9 @@ export function LandingContactSection() {
             className="rounded-full border-white/12 bg-white/5 text-white hover:bg-white/10"
           >
             <a
-              href="https://instagram.com/Aethon Lab"
+              href="https://instagram.com/aethonlab"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               <MessageCircle className="h-4 w-4" aria-hidden="true" />
               Instagram DM
